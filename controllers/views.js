@@ -13,4 +13,13 @@ router.get('/addpost', async (req, res) => {
     
 });
 
+router.get('/about', async (req, res) => {
+    try{
+        res.render('about')
+
+    } catch(err) {
+        console.log(err)
+    }
+})
+
 module.exports = router;
